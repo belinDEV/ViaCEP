@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/listAddressFragment">
+
+    <fragment
+        android:id="@+id/listAddressFragment"
+        android:name="com.example.viacep.presenter.list.ListAddressFragment"
+        android:label="fragment_list_address"
+        tools:layout="@layout/fragment_list_address" >
+        <action
+            android:id="@+id/action_listAddressFragment_to_searchAddressFragment"
+            app:destination="@id/searchAddressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchAddressFragment"
+        android:name="com.example.viacep.presenter.search.SearchAddressFragment"
+        android:label="fragment_search_address"
+        tools:layout="@layout/fragment_search_address" />
+</navigation>

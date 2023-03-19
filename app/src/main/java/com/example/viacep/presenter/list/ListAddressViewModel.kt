@@ -14,7 +14,7 @@ class ListAddressViewModel @Inject constructor() : ViewModel() {
     private val _addressList = MutableLiveData<MutableList<Address>>()
     val currentScrambledWord: LiveData<MutableList<Address>> = _addressList
 
-    fun saveAddress(address: Address) {
+    fun insertAddress(address: Address) {
         val currentList = _addressList.value ?: mutableListOf()
         currentList.add(address)
         _addressList.value = currentList

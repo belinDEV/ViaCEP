@@ -12,5 +12,10 @@ data class Address(
     val localidade: String?,
     val uf: String?,
     val ddd: String?,
-): Parcelable
+): Parcelable {
+
+    fun getFullAddress(): String {
+        return "$logradouro - $bairro\n$localidade/$uf - $cep"
+    }
+}
 

@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">ViaCEP</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--    SearchAddressFragment-->
+    <string name="label_address_empty_search_address_fragment">Nenhum endereço encontrado\ncom o cep digitado.</string>
+    <string name="label_enter_with_cep_search_address_fragment">Digite o CEP para obter o endereço</string>
+    <string name="label_cep_search_address_fragment">01311300</string>
+    <string name="text_button_save_search_address_fragment">Salvar</string>
+
 </resources>
